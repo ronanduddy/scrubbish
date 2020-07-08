@@ -1,6 +1,7 @@
 FROM python:3.9.0b1-alpine3.12
+MAINTAINER Ronan Duddy <ronanduddy@live.ie>
 
-ENV BUILD_PACKAGES entr
+ENV BUILD_PACKAGES build-base entr
 
 RUN apk update && \
     apk upgrade && \
