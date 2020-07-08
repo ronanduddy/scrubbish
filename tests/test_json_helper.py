@@ -2,10 +2,11 @@ import unittest
 import os
 from scrubbish.json_helper import JsonHelper
 
+
 class TestJsonHelper(unittest.TestCase):
     def setUp(self):
-        filename = 'test'
-        directory = 'tests/json'
+        filename = "test"
+        directory = "tests/json"
 
         self.json_helper = JsonHelper(filename)
         self.json_helper.directory = directory
@@ -15,7 +16,7 @@ class TestJsonHelper(unittest.TestCase):
 
     def tearDown(self):
         directory = self.json_helper.directory
-        files = [ file for file in os.listdir(directory) if file.endswith('.json') ]
+        files = [file for file in os.listdir(directory) if file.endswith(".json")]
 
         for file in files:
             os.remove(os.path.join(directory, file))
@@ -28,20 +29,21 @@ class TestJsonHelper(unittest.TestCase):
         name = self.json_helper.filename
         creation = self.json_helper.creation
 
-        return f'{directory}/{name}_{creation}.json'
+        return f"{directory}/{name}_{creation}.json"
 
     def test_dump(self):
-        self.json_helper.dump({'foo': 'bar'})
+        self.json_helper.dump({"foo": "bar"})
 
-        json_file = open(self.filename(), 'r')
+        json_file = open(self.filename(), "r")
         self.assertEqual(json_file.read(), '{"foo": "bar"}')
         json_file.close()
 
     def test_read(self):
-        self.json_helper.dump({'foo': 'bar'})
+        self.json_helper.dump({"foo": "bar"})
         name = self.filename()
 
-        self.assertEqual(JsonHelper(name).read(), {'foo': 'bar'})
+        self.assertEqual(JsonHelper(name).read(), {"foo": "bar"})
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

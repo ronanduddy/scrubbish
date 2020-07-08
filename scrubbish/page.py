@@ -2,6 +2,7 @@ import config
 from bs4 import BeautifulSoup
 from .request import Request
 
+
 class Page:
     def __init__(self, uri):
         self.domain = config.DOMAIN
@@ -12,7 +13,7 @@ class Page:
     def content(self):
         if self.soup is None:
             response = self.request.get()
-            self.soup = BeautifulSoup(response.content, 'html.parser')
+            self.soup = BeautifulSoup(response.content, "html.parser")
 
         return self.soup
 
@@ -21,4 +22,4 @@ class Page:
         self.soup = None
 
     def url(self):
-        return '{domain}{uri}'.format(domain=self.domain, uri=self.uri)
+        return "{domain}{uri}".format(domain=self.domain, uri=self.uri)
