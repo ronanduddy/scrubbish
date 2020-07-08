@@ -5,7 +5,7 @@
 Scrubbish is
 1. a tool for scraping a web site for information on properties
 2. a python learning project
-3. rubbish
+3. rubbish code
 
 [![Build Status](https://travis-ci.org/ronanduddy/scrubbish.svg?branch=master)](https://travis-ci.org/ronanduddy/scrubbish)
 
