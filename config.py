@@ -1,5 +1,5 @@
 import os
 
-DOMAIN = os.environ["DOMAIN"]
-DISTANCE_MATRIX_URL = os.environ["DISTANCE_MATRIX_URL"]
-DISTANCE_MATRIX_API_KEY = os.environ["DISTANCE_MATRIX_API_KEY"]
+DOMAIN = os.environ.get("DOMAIN", "test.com")
+DISTANCE_MATRIX_URL = os.environ.get("DISTANCE_MATRIX_URL", 'distance_matrix.com')
+DISTANCE_MATRIX_API_KEY = os.environ.get("DISTANCE_MATRIX_API_KEY", 'test key')
