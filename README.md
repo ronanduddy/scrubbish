@@ -13,7 +13,7 @@ Scrubbish is
 
 Clone the repo and add the domain that one would wish to scrape in [scrubbish.env.example](scrubbish.env.example), afterwards the `example` postfix may be removed. 
 
-## Usage
+## Usage (WIP)
 
 Then run the following
 
