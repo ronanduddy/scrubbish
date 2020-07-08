@@ -1,0 +1,5 @@
+import os
+
+DOMAIN = os.environ['DOMAIN']
+DISTANCE_MATRIX_URL = os.environ['DISTANCE_MATRIX_URL']
+DISTANCE_MATRIX_API_KEY = os.environ['DISTANCE_MATRIX_API_KEY']

@@ -1,0 +1,6 @@
+__pycache__/
+csv/
+json/
+*.csv
+*.json
+props.env
