@@ -9,9 +9,13 @@ Scrubbish is
 
 [![Build Status](https://travis-ci.org/ronanduddy/scrubbish.svg?branch=master)](https://travis-ci.org/ronanduddy/scrubbish)
 
-## Installation & Usage
+## Installation
 
-Clone the repo and run the following
+Clone the repo and add the domain that one would wish to scrape in [scrubbish.env.example](scrubbish.env.example), afterwards the `example` postfix may be removed. 
+
+## Usage
+
+Then run the following
 
 ```Shell
 make run
