@@ -1,6 +1,6 @@
 import unittest
 import os
-from props.csv_helper import CsvHelper
+from scrubbish.csv_helper import CsvHelper
 
 class TestCsvHelper(unittest.TestCase):
     def setUp(self):

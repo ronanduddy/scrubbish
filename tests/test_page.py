@@ -1,10 +1,10 @@
 import unittest
 from unittest.mock import Mock
 from unittest.mock import patch
-from props.page import Page
+from scrubbish.page import Page
 
 class TestPage(unittest.TestCase):
-    @patch('props.page.Request', autospec=True)
+    @patch('scrubbish.page.Request', autospec=True)
     def setUp(self, request):
         self.request = request
         self.request.return_value.get.return_value = Mock(content='<html>hello</html>')

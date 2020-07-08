@@ -1,9 +1,9 @@
 version: '3.7'
 
 services:
-  props:
+  scrubbish:
     build: .
     volumes:
       - ./:/usr/src/app
     env_file:
-      - props.env
+      - scrubbish.env

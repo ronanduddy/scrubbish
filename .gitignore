@@ -3,4 +3,4 @@ csv/
 json/
 *.csv
 *.json
-props.env
+scrubbish.env

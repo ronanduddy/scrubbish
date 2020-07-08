@@ -1,9 +1,9 @@
 import unittest
 from unittest.mock import patch
-from props.request import Request
+from scrubbish.request import Request
 
 class TestRequest(unittest.TestCase):
-    @patch('props.request.requests')
+    @patch('scrubbish.request.requests')
     def test_get(self, requests):
         requests.get.return_value = 200
 

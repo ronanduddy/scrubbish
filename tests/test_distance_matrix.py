@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import Mock
 from unittest.mock import patch
-from props.distance_matrix import DistanceMatrix
+from scrubbish.distance_matrix import DistanceMatrix
 
 class TestDistanceMatrix(unittest.TestCase):
     def test_to_h(self):
@@ -109,7 +109,7 @@ class TestDistanceMatrix(unittest.TestCase):
 
         self.assertEqual(result, expected)
 
-    @patch('props.distance_matrix.Request', autospec=True)
+    @patch('scrubbish.distance_matrix.Request', autospec=True)
     def test_get(self, request):
         attributes = {'json.return_value': {'foo': 'bar'}}
         request.return_value.get.return_value = Mock(**attributes)

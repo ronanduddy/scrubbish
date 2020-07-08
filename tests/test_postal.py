@@ -1,5 +1,5 @@
 import unittest
-from props.postal import Postal
+from scrubbish.postal import Postal
 
 class TestPostal(unittest.TestCase):
     def test_info_not_found(self):

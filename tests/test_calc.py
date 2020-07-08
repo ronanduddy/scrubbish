@@ -1,5 +1,5 @@
 import unittest
-from props.calc import Calc
+from scrubbish.calc import Calc
 
 class TestCalc(unittest.TestCase):
     def setUp(self):

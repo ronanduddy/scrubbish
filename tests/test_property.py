@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import Mock
-from props.property import Property
+from scrubbish.property import Property
 
 class TestProperty(unittest.TestCase):
     def setUp(self):

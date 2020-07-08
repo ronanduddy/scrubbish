@@ -1,6 +1,6 @@
 import unittest
 import os
-from props.json_helper import JsonHelper
+from scrubbish.json_helper import JsonHelper
 
 class TestJsonHelper(unittest.TestCase):
     def setUp(self):
