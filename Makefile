@@ -1,4 +1,4 @@
-.PHONY: build run test test-dev shell
+.PHONY: build run test test-dev shell lint
 
 build:
 	@docker-compose build scrubbish
@@ -14,3 +14,6 @@ test-dev: build
 
 shell: build
 	@docker-compose run --rm scrubbish sh
+
+lint: build
+	@docker-compose run --rm scrubbish black .
